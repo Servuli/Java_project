@@ -1,5 +1,8 @@
 import java.util.Scanner;
 // Created by Vadim 04.03.2025
+/* Оператор switch выполнит конкретное условие если введенные данные будут
+совпадать со значением переменной. Полезно, когда нужно выбрать один код из нескольких.
+ */
 public class Switch {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
