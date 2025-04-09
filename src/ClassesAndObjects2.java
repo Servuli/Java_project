@@ -14,11 +14,25 @@ public class ClassesAndObjects2 {
         person2.name = "Вова";
         person2.age = 20;
         person2.speak();
+        /** Это другой урок
+         * от 09.04.2025 - в нем разбирается функция return
+         * переменные int про пенсию выведены уже после объявления return
+         **/
+        int year1=person1.calculateYearsToRetirement();
+
+        int year2=person2.calculateYearsToRetirement();
+        System.out.println("Первому человеку до пенсии:"+year1+" лет");
+        System.out.println("Второму человеку до пенсии:"+year2+" лет");
     }
 }
 class Persone {
     String name;
     int age;
+
+    int calculateYearsToRetirement (){
+        int years = 65-age;
+        return years; // Эта переменная возвращает данные после выполнения ими функции
+    }
     void speak(){
         System.out.println("Меня зовут "+ name + ",мне "+ age+ " лет.");
     }
